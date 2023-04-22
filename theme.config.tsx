@@ -12,6 +12,11 @@ const config: DocsThemeConfig = {
       </i>
     ),
   },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s – David's Workspace",
+    };
+  },
 };
 
 export default config;
