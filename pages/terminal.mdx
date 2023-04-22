@@ -1,0 +1,52 @@
+import { Steps, Callout } from 'nextra-theme-docs';
+
+# What I use in the terminal?
+
+I try to keep the list of CLI tools I use pretty **short and simple**.
+
+## Basic Setup
+
+<Callout type="info">This setup is MacOS-specific</Callout>
+
+<Steps>
+### Command-line tools
+Before we can do anything, we need to install the Xcode Command Line Developer Tools.
+
+```bash copy
+xcode-select --install
+```
+
+This will install all the necessary stuff for us to continue with the setup.
+
+### Homebrew
+
+```bash copy
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### Other tools
+
+With Homebrew installed, I can install some of the tools I use for development.
+
+```bash
+brew install exa git node@18 pnpm python@3.11 yarn
+```
+
+<Callout type="warning">
+  Some of the versions can be out-of-date at the time you are reading this.
+</Callout>
+
+</Steps>
+
+## Aliases
+
+As everyone should, I have my own aliases I use in the terminal.
+
+```bash filename=".zshrc" copy
+alias ll="exa -l -a -h -s=type --no-user"
+alias gst="git status"
+alias gfop="git fetch origin -pP"
+alias gdog="git log --all --decorate --oneline --graph"
+alias rmnm="rm -rf node_modules/"
+alias zshrc="code ~/.zshrc"
+```

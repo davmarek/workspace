@@ -1,0 +1,49 @@
+import { Steps } from 'nextra-theme-docs';
+import Image from 'next/image';
+import terminalImg from '/public/assets/terminal.png';
+
+# iTerm
+
+I like things **clean** and **simple**. I have nothing against the default MacOS Terminal, but I was missing features like tabs or panel splitting, so I switched to iTerm.
+
+## Install
+
+You can download iTerm from [here](https://iterm2.com/index.html) and install it directly.
+
+Or you can do it the **better way** and use [Homebrew](/terminal/homebrew).
+
+```bash copy
+brew install --cask iterm2
+```
+
+## Make it look good
+
+The default look of iTerm is fine, but we can do better.
+
+<Steps>
+
+### Theme
+
+I like to use the [Dracula theme](https://draculatheme.com/iterm). To install it, follow the instructions on the page.
+
+After setting up the theme, I like to dial down the purple background. Under _Settings → Profiles → Colors_ set the background color to `#16161a`.
+
+### Prompt
+
+Using [Fig](/terminal/fig) install _spaceship-prompt_ and _zsh-syntax-highlighing_. These two plugins not only look nice, they are also very **useful**.
+
+### Final change
+
+Under _Settings → Appearance_ change the theme to **Minimal**.
+
+</Steps>
+
+<Image src={terminalImg} alt="terminal" />
+
+## Shortcuts
+
+As mentioned above, I like to split my terminal into multiple panels.
+
+- split your terminal horizontally, press `⌘ D`
+- split your terminal vertically, press `⇧ ⌘ D`
+- close current panel with `⌘ W`

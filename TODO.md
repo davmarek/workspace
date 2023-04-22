@@ -1,0 +1,25 @@
+Jaké stránky tu budou?
+- Terminal Setup
+  - homebrew
+  - fig
+    - spaceship prompt
+    - zsh symtax 
+  - wd
+  - node
+  - pnpm
+  - 
+- Applications
+  - iTerm
+    - Dracula
+  - VSCode
+    - Extensions
+  - Notion (school)
+- MacOS Utilities
+  - Fig
+  - Magnet
+  - Shottr
+  - Mos
+- Color themes
+  - VSCode - One Dark
+  - Terminal - Dracula
+  - Fig - also Dracula
