@@ -2,5 +2,7 @@
   "homebrew": "homebrew",
   "fig": "fig",
   "wd": "wd",
-  "exa": "exa"
+  "exa": "exa",
+  "aliases": "Aliases",
+  "font": "Font"
 }

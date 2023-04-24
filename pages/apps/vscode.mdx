@@ -1,0 +1,141 @@
+# Visual Studio Code
+
+## Install
+
+You can download iTerm from [here](https://iterm2.com/index.html) and install it directly.
+
+## Extensions
+
+Here is a list of some of my VSCode extensions that I think are worth mentioning.
+
+- Auto Close Tag (formulahendry.auto-close-tag)
+- Auto Rename Tag (formulahendry.auto-rename-tag)
+- ES7+ React/Redux/React-Native snippets (dsznajder.es7-react-js-snippets)
+- Excel Viewer (GrapeCity.gc-excelviewer)
+- Git Graph (mhutchie.git-graph)
+- GitLens - Git supercharged (mhutchie.git-graph)
+- indent-rainbow (oderwat.indent-rainbow)
+- IntelliCode API Usage Examples (VisualStudioExptTeam.intellicode-api-usage-examples)
+- JSON Crack (AykutSarac.jsoncrack-vscode)
+- Markdown All in One (yzhang.markdown-all-in-one)
+- One Dark Pro (zhuangtongfa.material-theme)
+- Prettier (esbenp.prettier-vscode)
+- Pretty TypeScript Errors (yoavbls.pretty-ts-errors)
+- Rainbow CSV (mechatroner.rainbow-csv)
+- Remove Comments (plibither8.remove-comments)
+- Robot Framework Language Server (robocorp.robotframework-lsp)
+- Task Runner (SanaAjani.taskrunnercode)
+- Template String Converter (meganrogge.template-string-converter)
+- Thunder Client (rangav.vscode-thunder-client)
+- TODO Highlight (wayou.vscode-todo-highlight)
+- Todo Tree (Gruntfuggly.todo-tree)
+- vscode-icons (vscode-icons-team.vscode-icons)
+- Inline fold (moalamri.inline-fold)
+
+## Theme
+
+I like to use the [Dracula theme](https://draculatheme.com/iterm). To install it, follow the instructions on the page.
+
+## Shortcuts
+
+- `⎇ + up/down` - move the selected line(s)
+- `⇧ ⎇ + up/down` - duplicate the selected line(s)
+
+## `settings.json`
+
+```json
+{
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[rust]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+
+  "[robotframework]": {
+    "editor.indentSize": 2,
+    "editor.tabSize": 2
+  },
+
+  // General settings
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "vscode-icons",
+
+  "editor.cursorBlinking": "phase",
+  "editor.mouseWheelZoom": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.accessibilitySupport": "off",
+
+  // Prettier
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+
+  "explorer.confirmDragAndDrop": false,
+
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+  "git.path": "/opt/homebrew/bin/git",
+
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // Languages++
+
+  "javascript.suggest.autoImports": false,
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "svelte.enable-ts-plugin": true,
+  "bladeFormatter.format.indentSize": 2,
+
+  // Additional
+  "audioCues.volume": 0,
+  "vsicons.dontShowNewVersionMessage": true,
+
+  "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontSize": 14
+}
+```

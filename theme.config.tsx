@@ -3,6 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs';
 const config: DocsThemeConfig = {
   logo: <span>David's Workspace</span>,
   editLink: { text: '' },
+  feedback: { content: '' },
 
   footer: {
     text: (

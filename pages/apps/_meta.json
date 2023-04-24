@@ -1,3 +1,5 @@
 {
-  "iterm": "iTerm"
+  "iterm": "iTerm",
+  "vscode": "Visual Studio Code",
+  "macos": "MacOS Utilities"
 }
